@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🐍 贪吃蛇游戏</h1>
+
+        <div class="game-area">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+
+        <div class="controls">
+            <div class="score-board">
+                <span>分数: <span id="score">0</span></span>
+                <span>长度: <span id="length">1</span></span>
+            </div>
+
+            <div class="btn-group">
+                <button id="startBtn" class="btn">开始游戏</button>
+                <button id="pauseBtn" class="btn">暂停</button>
+                <button id="resetBtn" class="btn">重置</button>
+            </div>
+
+            <div class="mobile-controls">
+                <div class="direction-pad">
+                    <button class="dir-btn" data-dir="up">↑</button>
+                </div>
+                <div class="direction-row">
+                    <button class="dir-btn" data-dir="left">←</button>
+                    <button class="dir-btn" data-dir="down">↓</button>
+                    <button class="dir-btn" data-dir="right">→</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>操作说明</h3>
+            <p>🖥️ PC: 使用方向键 ↑↓←→ 控制方向</p>
+            <p>📱 手机: 点击方向按钮或滑动屏幕控制</p>
+            <p>🎯 吃到食物得分，撞墙或撞到自己游戏结束</p>
+        </div>
+    </div>
+
+    <script src="snake.js"></script>
+</body>
+</html>
